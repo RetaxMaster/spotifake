@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # spotify-clon
 
 ## Project setup
@@ -22,3 +23,7 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
+# spotifake
+Un clon de Spotify :D
+>>>>>>> 490efe43660b4397450e69082ec46182267805c2
