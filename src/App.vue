@@ -1,6 +1,6 @@
 <template>
 
-  <div>
+  <div id="spotifake">
 
     <header>
 
@@ -72,6 +72,62 @@ export default {
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+}
 
+a {
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.7;
+  font-weight: bold;
+  transition: opacity ease 0.5s;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
+figure {
+  display: inline-block;
+  width: 100%;
+  max-width: 200px;
+}
+
+figure img {
+  display: inline-block;
+  width: 100%;
+}
+
+#spotifake {
+  display: grid;
+  grid-template-areas: "header main   aside"
+                       "player player player"
+}
+
+#spotifake > header {
+  grid-area: header;
+  background: #000;
+  color: #fff;
+}
+
+#spotifake > main {
+  grid-area: main;
+}
+
+#spotifake > aside {
+  grid-area: aside;
+}
+
+#spotifake > section {
+  grid-area: player;
+}
 
 </style>
