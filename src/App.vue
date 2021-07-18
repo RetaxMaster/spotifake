@@ -1,26 +1,77 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+  <div>
+
+    <header>
+
+      <Navigation />
+
+      <ActionButtons />
+
+      <PlayLists />
+
+    </header>
+
+    <main>
+
+      <header>
+
+        <PrevNext />
+
+        <Album />
+
+      </header>
+
+    </main>
+
+    <Actividad />
+
+    <section>
+      <p>Aquí ira el reproductor de música</p>
+    </section>
+
+  </div>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+// Header
+import Navigation from '@/components/Header/Navigation'
+import ActionButtons from '@/components/Header/ActionButtons'
+import PlayLists from '@/components/Header/PlayLists'
+
+// Main
+import PrevNext from '@/components/Main/PrevNext'
+import Album from '@/components/Main/Album'
+
+// Aside
+import Actividad from '@/components/Actividad'
 
 export default {
+
   name: 'App',
+
   components: {
-    HelloWorld
+    Navigation,
+    ActionButtons,
+    PlayLists,
+    PrevNext,
+    Album,
+    Actividad
   }
+
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+
+
 </style>
